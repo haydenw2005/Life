@@ -1,23 +1,2 @@
 # Life
-Life
-January, 2020 
-Upon running this program the user will be prompted for an input txt file name, output txt file name, ms sleep, and frame count. This file, if formatted correctly, will be used to generate a grid according to 2d array filled with x and .'s within the file. The program will then read this file and generate an frame, drawing a black square if the cell is alive and a white square if the cell is dead. The frame will then update the 2d array according to a certain set of rules. These rules are:
-  Any live cell with fewer than two live neighbors dies, as if caused by under-population. 
-  Any live cell with two or three live neighbors lives on to the next generation.
-  Any live cell with more than three live neighbors dies, as if by overcrowding.
-  Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
-Once the 2d array has been updated according to these rules, the program will then update the frame as well. This process goes on until the program has updated the window as many times as inputed as the user. Once the program is done running the simulation, the last frame will be outputed to a .txt file in the same format as the input file. See below:
-
-Sample file contents:
-
-10 10          # grid dimentions
-.xxxxxxxx.
-x.x.x.x.x.     # The starting frame of the simulation (x is alive . is dead)
-.x.x.x.x..
-xxxxxxx...
-..........
-..........
-..........
-....xxx...
-..........
-..........
+Life is a classic iteration of Conway's Game of Life. Built entirely in Java, this program creates a basic simulation of the life-cycle of cells and the way their colonies evolve.
